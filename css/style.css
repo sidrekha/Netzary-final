@@ -11,7 +11,7 @@ head {
     background: tomato;
 }
 
-/*----------------------TopHeadrbar----------------*/
+/*----------------------TopHeaderbar----------------*/
 .top-nav-bar {
     height: 57px;
     top: 0;
@@ -178,7 +178,61 @@ head {
     }
 }
 
+@media only screen and (max-width:500px) {
+    .container-fluid {
+        width: 100%;
+    }
 
+    .row {
+        width: 100%;
+    }
+
+    .top-nav-bar {
+        height: 118px;
+        border-bottom: 0;
+    }
+
+    .search-box {
+        width: 100%;
+    }
+
+    .menu-bar {
+        width: 100%;
+    }
+
+    .menu-bar ul {
+        margin: 10px 0;
+        width: 100%;
+    }
+
+    .menu-bar ul li {
+        height: 57px;
+        width: 100%;
+    }
+
+    .header-bar {
+        width: 100%;
+    }
+
+    .header-bar ul {
+        margin: 10px 0;
+        width: 100%;
+    }
+
+    .header-bar ul li {
+        height: 57px;
+        width: 100%;
+    }
+
+    .header-bar ul li a {
+        height: 57px;
+        width: 100%;
+    }
+
+    .background {
+        width: 100%;
+    }
+}
 
 /*---------------------Product------------------*/
 
@@ -352,6 +406,36 @@ button {
 }
 
 @media only screen and (max-width:980px) {
+    .title-box {
+        width: 100%;
+    }
+
+    .new-arrivals {
+        width: 100%;
+    }
+
+    .bottom-left {
+        width: 100%;
+    }
+
+    .top-left {
+        width: 100%;
+    }
+
+    .center {
+        width: 100%;
+    }
+
+    .bottom {
+        width: 100%;
+    }
+
+    .img-responsive {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:500px) {
     .title-box {
         width: 100%;
     }
@@ -638,28 +722,6 @@ h5.secondtext {
 
 }
 
-/* 
-.shopnow2 {
-    background-color: black;
-    color: white;
-    border-radius: 50%;
-    margin-left: 800px;
-}
-
-.shopnow22 {
-    background-color: black;
-    color: white;
-    border-radius: 50%;
-    margin-right: 80%;
-}
-
-.shopnow22 {
-    background-color: black;
-    color: white;
-    border-radius: 50%;
-    margin-bottom: 20px;
-}  */
-
 .logos {
     background-color: #ffffff;
     margin-top: 20px;
@@ -694,3 +756,36 @@ h5.secondtext {
 
     margin-right: 60px;
 }
+
+@media only screen and (max-width:980px) {
+    .row {
+        width: 100;
+    }
+
+    .column {
+        width: 100%;
+    }
+
+    .product-top {
+        width: 100%;
+    }
+
+    .category {
+        width: 100%;
+    }
+
+    .del {
+        width: 100%;
+    }
+
+    .addtocart {
+        width: 100%;
+    }
+
+    .productshortname {
+        width: 100%;
+    }
+
+    .category {
+        width: 100%;
+    }

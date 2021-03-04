@@ -1,9 +1,16 @@
+
+  
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+    <!-- <meta name="viewport" content="user-scalable=0;"/> -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="stylesheet" type="text/css" media="screen and (max-width: 360px)" href="style.css">
+    <link rel="stylesheet" type="text/css" media="screen and (max-width: 500px)" href="style.css">
+    <link rel="stylesheet" type="text/css" media="screen and (max-width: 980px)" href="style.css">
     <title>Netzary</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
@@ -11,24 +18,95 @@
   </head>
   <body>
    
-<!-- Code for Top header bar -->
-
-    <div class="top-nav-bar">
-      <div class="search-box">
+<!-- Code for Top header bar -->      
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <img src="../assets/img/logo.png" alt="" class="logo">
-        <input type="text" class="form-control">
-        <span class="input-group-text"><i class="fa fa-search"></i></span>
-      </div>
-      <div class="menu-bar">
-        <ul>
-          <li><a href="#">Accounts</a></li>
-          <li><a href="#">Orders</a></li>
-          <li><a href="#"><i class="fa fa-shopping-basket"></i>Cart</a></li>
-      </ul>
-    </div>
-</div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+                  <div class="search-box">
+          <input type="text" class="form-control">
+          <span class="input-group-text"><i class="fa fa-search"></i></span>
+       </div>
+       <div class="collapse navbar-collapse" id="navbarNavDropdown">
+       <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" href="#">Account</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#">Orders</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Cart</a>
+        </li> 
+       </ul>
+       </div>
+      </nav>
+
+
  <!-- Code for Menu Bar -->
- 
+ <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Home Appliances</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Home Entertainment
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">page1</a>
+          <a class="dropdown-item" href="#">page2</a>
+          <a class="dropdown-item" href="#">page3</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Mobiles
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">page1</a>
+          <a class="dropdown-item" href="#">page2</a>
+          <a class="dropdown-item" href="#">page3</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Kitchen Appliances
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">page1</a>
+          <a class="dropdown-item" href="#">page2</a>
+          <a class="dropdown-item" href="#">page3</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Furniture</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Laptop & IT</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Personal Care</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Accessories</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Health Care</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Draw Result</a>
+      </li>
+   
+    </ul>
+  </div>
+</nav>
 <!-- Code for Banner -->
 
 <div class="container-fluid">
@@ -43,9 +121,9 @@
 
 <section class="On-product">
   <div class="container">
-    <div class="title-box">
+    <!-- <div class="title-box">
       <h2>Products</h2>
-    </div>
+    </div> -->
     <div class="row">
       <div class="col-md-2">
         <div class="products">
@@ -108,9 +186,8 @@
 
 <section class="on-sale">
   <div class="container">
-    <div class="title-box">
-      <h2>on-sale</h2>
-    </div>
+   <h3 class="title">on-sale</h3>
+ 
  <div class="row">
     <div class="col-md-3">
       <img src="../assets/img/sungalss.png" alt="Snow" style="width:100%;">
@@ -151,11 +228,9 @@
 
 <section class="On-product">
   <div class="container">
-    <div class="title-box">
-      <h2>Featured Products</h2>
-    </div>
+    <h3 class="title">Featured Products</h3>
     <div class="row">
-      <div class="column">
+      <div class="col-md-2">
         <div class="product-top">
           <button class="green">HOT</button><br>
           <button class="red">20% OFF</button>
@@ -174,7 +249,7 @@
           <button class="addtocart" type="submit">ADD TO CART</button>
       </div>
       </div>
-      <div class="column">
+      <div class="col-md-2">
         <div class="product-top">
           <button class="green">HOT</button><br>
           <button class="red">20% OFF</button>
@@ -193,10 +268,10 @@
           <button class="addtocart" type="submit">ADD TO CART</button>
       </div>
       </div>
-      <div class="column">
+      <div class="col-md-2">
         <div class="product-top">
-          <!-- <button class="green">HOT</button><br>
-          <button class="red">20% OFF</button> -->
+          <button class="green">HOT</button><br>
+          <button class="red">20% OFF</button>
           
           <img class="featuredproduct" src="../assets/img/laptop3.png" alt="" >
         </div>
@@ -213,7 +288,7 @@
           <button class="addtocart" type="submit">ADD TO CART</button>
       </div>
       </div>
-      <div class="column">
+      <div class="col-md-2">
         <div class="product-top">
           <button class="green">HOT</button><br>
           <button class="red">20% OFF</button>
@@ -232,11 +307,30 @@
           <button class="addtocart" type="submit">ADD TO CART</button>
       </div>
       </div>
-      <div class="column">
+      <div class="col-md-2">
         <div class="product-top">
           <button class="green">HOT</button><br>
           <button class="red">20% OFF</button>
           <img class="featuredproduct" src="../assets/img/laptop5.png" alt="" >
+        </div>
+        <div class="featured-bottom">
+          <p class="category">CATEGORY</p>
+          <p class="productshortname">Product Short Name</p>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-o"></i>
+         
+          <h5><del class="del">&#8377; 49.00</del><strong>&#8377; 59.00</strong></h5>
+          <button class="addtocart" type="submit">ADD TO CART</button>
+      </div>
+      </div>
+      <div class="col-md-2">
+        <div class="product-top">
+          <button class="green">HOT</button><br>
+          <button class="red">20% OFF</button>
+          <img class="featuredproduct" src="../assets/img/laptop6.png" alt="" >
         </div>
         <div class="featured-bottom">
           <p class="category">CATEGORY</p>
@@ -258,26 +352,23 @@
   <div class="row">
    <div class="col-md-12">
   <img src="../assets/img/background1.png" alt="" class="img-responsive" style="margin-top: 40px;">
-  <p class="banner-text1">LIMITED STOCKS HURRY NOW</p>
+  <!-- <p class="banner-text1">LIMITED STOCKS HURRY NOW</p>
   <p class="banner-text2">CHECK PAI PRICE AND OFFERS BEFORE YOU BUY</p>
-  <p class="banner-text3">1.5 Ton 3 & 5 Star Ac Range starts @ <strong style="font-size: 30px;">&#8377; 28,990</strong></p>
+  <p class="banner-text3">1.5 Ton 3 & 5 Star Ac Range starts @ <strong style="font-size: 30px;">&#8377; 28,990</strong></p> -->
 </div>
 </div>
 </div>
 
 <!-- ---------------Code for New Arrivals------------------ -->
+
 <section class="On-product">
   <div class="container">
-    <div class="title-box">
-      <h2>New Arrivals</h2>
-      <hr>
-      <!-- <button class="view" type="submit">VIEW ALL</button> -->
-    </div>
+    <h3 class="title">New Arrivals</h3>
     <div class="row">
-      <div class="column">
+      <div class="col-md-2">
         <div class="product-top1">
-          <!-- <button class="green">HOT</button><br> -->
-          <button class="red">20% OFF</button>
+          <button class="green">HOT</button><br>
+          <!-- <button class="red">20% OFF</button> -->
           <img class="featuredproduct" src="../assets/img/arrivals1.png" alt="" >
         </div>
         <div class="featured-bottom1">
@@ -293,10 +384,10 @@
           <button class="addtocart" type="submit">ADD TO CART</button>
       </div>
       </div>
-      <div class="column">
+      <div class="col-md-2">
         <div class="product-top1">
-          <!-- <button class="green">HOT</button><br> -->
-          <button class="red">20% OFF</button>
+          <button class="green">HOT</button><br>
+          <!-- <button class="red">20% OFF</button> -->
           <img class="featuredproduct" src="../assets/img/arrivals2.png" alt="" >
         </div>
         <div class="featured-bottom1">
@@ -312,10 +403,10 @@
           <button class="addtocart" type="submit">ADD TO CART</button>
       </div>
       </div>
-      <div class="column">
+      <div class="col-md-2">
         <div class="product-top1">
-           <button class="green">HOT</button>
-          <!-- <button class="red">20% OFF</button>  -->
+          <button class="green">HOT</button><br>
+          <!-- <button class="red">20% OFF</button> -->
           
           <img class="featuredproduct" src="../assets/img/arrivals3.png" alt="" >
         </div>
@@ -332,14 +423,13 @@
           <button class="addtocart" type="submit">ADD TO CART</button>
       </div>
       </div>
-      <div class="column">
+      <div class="col-md-2">
         <div class="product-top1">
-           <button class="green">HOT</button>
-          <!-- <button class="red">20% OFF</button>  -->
-          
+          <!-- <button class="green">HOT</button><br> -->
+          <button class="red">20% OFF</button>
           <img class="featuredproduct" src="../assets/img/arrivals4.png" alt="" >
         </div>
-        <div class="featured-bottom1">
+        <div class="featured-bottom">
           <p class="category">CATEGORY</p>
           <p class="productshortname">Product Short Name</p>
           <i class="fa fa-star"></i>
@@ -347,14 +437,15 @@
           <i class="fa fa-star"></i>
           <i class="fa fa-star"></i>
           <i class="fa fa-star-o"></i>
+         
           <h5><del class="del">&#8377; 49.00</del><strong>&#8377; 59.00</strong></h5>
           <button class="addtocart" type="submit">ADD TO CART</button>
       </div>
       </div>
-      <div class="column">
+      <div class="col-md-2">
         <div class="product-top1">
-           <!-- <button class="green">HOT</button><br> -->
-          <button class="red">20% OFF</button> 
+          <!-- <button class="green">HOT</button><br> -->
+          <button class="red">20% OFF</button>
           <img class="featuredproduct" src="../assets/img/arrivals5.png" alt="" >
         </div>
         <div class="featured-bottom1">
@@ -365,10 +456,31 @@
           <i class="fa fa-star"></i>
           <i class="fa fa-star"></i>
           <i class="fa fa-star-o"></i>
+         
           <h5><del class="del">&#8377; 49.00</del><strong>&#8377; 59.00</strong></h5>
           <button class="addtocart" type="submit">ADD TO CART</button>
       </div>
-      </div>  
+      </div>
+      <div class="col-md-2">
+        <div class="product-top1">
+          <button class="green">HOT</button><br>
+          <!-- <button class="red">20% OFF</button> -->
+          <img class="featuredproduct" src="../assets/img/laptop6.png" alt="" >
+        </div>
+        <div class="featured-bottom1">
+          <p class="category">CATEGORY</p>
+          <p class="productshortname">Product Short Name</p>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-o"></i>
+         
+          <h5><del class="del">&#8377; 49.00</del><strong>&#8377; 59.00</strong></h5>
+          <button class="addtocart" type="submit">ADD TO CART</button>
+      </div>
+      </div>
+       </div>
 </section>
 <div class="container-fluid">
   <div class="row">
@@ -409,18 +521,12 @@
 
 <section class="On-product">
   <div class="container">
-    <div class="title-box">
-      <h2>New Arrivals</h2>
-      <hr>
-      <!-- <button class="view" type="submit">VIEW ALL</button> -->
-    </div>
-    <div class="container">
-      
+    <h3 class="title">New Arrivals</h3>
     <div class="row">
-      <div class="column">
+      <div class="col-md-2">
         <div class="product-top1">
-          <!-- <button class="green">HOT</button><br> -->
-          <button class="red">20% OFF</button>
+          <button class="green">HOT</button><br>
+          <!-- <button class="red">20% OFF</button> -->
           <img class="featuredproduct" src="../assets/img/arrivals1.png" alt="" >
         </div>
         <div class="featured-bottom1">
@@ -436,10 +542,10 @@
           <button class="addtocart" type="submit">ADD TO CART</button>
       </div>
       </div>
-      <div class="column">
+      <div class="col-md-2">
         <div class="product-top1">
-          <!-- <button class="green">HOT</button><br> -->
-          <button class="red">20% OFF</button>
+          <button class="green">HOT</button><br>
+          <!-- <button class="red">20% OFF</button> -->
           <img class="featuredproduct" src="../assets/img/arrivals2.png" alt="" >
         </div>
         <div class="featured-bottom1">
@@ -455,10 +561,10 @@
           <button class="addtocart" type="submit">ADD TO CART</button>
       </div>
       </div>
-      <div class="column">
+      <div class="col-md-2">
         <div class="product-top1">
-           <button class="green">HOT</button>
-          <!-- <button class="red">20% OFF</button>  -->
+          <button class="green">HOT</button><br>
+          <!-- <button class="red">20% OFF</button> -->
           
           <img class="featuredproduct" src="../assets/img/arrivals3.png" alt="" >
         </div>
@@ -475,14 +581,13 @@
           <button class="addtocart" type="submit">ADD TO CART</button>
       </div>
       </div>
-      <div class="column">
+      <div class="col-md-2">
         <div class="product-top1">
-           <button class="green">HOT</button>
-          <!-- <button class="red">20% OFF</button>  -->
-          
+          <!-- <button class="green">HOT</button><br> -->
+          <button class="red">20% OFF</button>
           <img class="featuredproduct" src="../assets/img/arrivals4.png" alt="" >
         </div>
-        <div class="featured-bottom1">
+        <div class="featured-bottom">
           <p class="category">CATEGORY</p>
           <p class="productshortname">Product Short Name</p>
           <i class="fa fa-star"></i>
@@ -490,14 +595,15 @@
           <i class="fa fa-star"></i>
           <i class="fa fa-star"></i>
           <i class="fa fa-star-o"></i>
+         
           <h5><del class="del">&#8377; 49.00</del><strong>&#8377; 59.00</strong></h5>
           <button class="addtocart" type="submit">ADD TO CART</button>
       </div>
       </div>
-      <div class="column">
+      <div class="col-md-2">
         <div class="product-top1">
-           <!-- <button class="green">HOT</button><br> -->
-          <button class="red">20% OFF</button> 
+          <!-- <button class="green">HOT</button><br> -->
+          <button class="red">20% OFF</button>
           <img class="featuredproduct" src="../assets/img/arrivals5.png" alt="" >
         </div>
         <div class="featured-bottom1">
@@ -508,11 +614,31 @@
           <i class="fa fa-star"></i>
           <i class="fa fa-star"></i>
           <i class="fa fa-star-o"></i>
+         
           <h5><del class="del">&#8377; 49.00</del><strong>&#8377; 59.00</strong></h5>
           <button class="addtocart" type="submit">ADD TO CART</button>
       </div>
-      </div> 
-      </div> 
+      </div>
+      <div class="col-md-2">
+        <div class="product-top1">
+          <button class="green">HOT</button><br>
+          <!-- <button class="red">20% OFF</button> -->
+          <img class="featuredproduct" src="../assets/img/laptop6.png" alt="" >
+        </div>
+        <div class="featured-bottom1">
+          <p class="category">CATEGORY</p>
+          <p class="productshortname">Product Short Name</p>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-o"></i>
+         
+          <h5><del class="del">&#8377; 49.00</del><strong>&#8377; 59.00</strong></h5>
+          <button class="addtocart" type="submit">ADD TO CART</button>
+      </div>
+      </div>
+       </div>
 </section>
 <section class="logos">
   <div class="container">
